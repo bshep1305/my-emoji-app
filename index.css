@@ -5,8 +5,27 @@ html {
 
 body {
     padding: 10px;
-    background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+   background: rgb(210,255,82); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 97%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%,rgba(145,232,66,1) 97%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(210,255,82,1) 0%,rgba(145,232,66,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842'GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.title {
+text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 
 #emoji-container {
@@ -20,18 +39,17 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
 }
 
 #push-btn,#unshift-btn {
-    background-color: orange;
+    background-color: #80D87F;
 }
 
 #shift-btn,#pop-btn {
-    background-color: orange;
+    background-color: #E23349;
 }
 
 h1 {
     letter-spacing: 2px;
     text-align: center;
     color: white;
-    
 }
 
 input {
@@ -42,6 +60,7 @@ input {
     background: white;
     border-radius: 6px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 button {
